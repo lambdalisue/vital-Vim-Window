@@ -7,7 +7,7 @@ function! s:_vital_loaded(V) abort
   let s:Dict = a:V.import('Data.Dict')
 endfunction
 
-function! s:_vital_depends(V) abort
+function! s:_vital_depends() abort
   return ['Data.Dict']
 endfunction
 
