@@ -4,18 +4,14 @@ Describe Vim.Window
   End
 
   After all
-    silent! tabdo windo bwipeout!
+    %bwipeout!
   End
 
   Before
-    silent! tabdo windo bwipeout!
+    %bwipeout!
   End
 
   Describe .focus_window({expr} [, {options}])
-    It throws an exception when an unknown attribute has specified to {options}
-      Throws /Unknown attribute/ Window.focus_window(1, {'foo': 'bar'})
-    End
-
     Context {options.range} is 'tabpage'
       It returns v:null when no corresponding window of {expr} is found
         let guard = Window.focus_window(0)
@@ -108,10 +104,6 @@ Describe Vim.Window
   End
 
   Describe .focus_buffer({expr} [, {options}])
-    It throws an exception when an unknown attribute has specified to {options}
-      Throws /Unknown attribute/ Window.focus_buffer(1, {'foo': 'bar'})
-    End
-
     Context {options.range} is 'tabpage'
       It returns v:null when no corresponding buffer of {expr} is found
         edit foo1

@@ -31,9 +31,6 @@ focus_window({expr} [, {options}])
 			"tabpage"	Find a window from a current tabpage
 			"all"		Find a window from all tabpages
 			The default value is "tabpage"
-
-	It throws an exception when unknown attribute is specified to the
-	{options}.
 >
 	edit foo1
 	split foo2
@@ -57,9 +54,6 @@ focus_buffer({expr} [, {options}])
 			"tabpage"	Find a buffer from a current tabpage
 			"all"		Find a buffer from all tabpages
 			The default value is "tabpage"
-
-	It throws an exception when unknown attribute is specified to the
-	{options}.
 >
 	edit foo1
 	split foo2
