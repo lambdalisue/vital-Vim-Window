@@ -1,6 +1,6 @@
 *Vital/Vim/Window.txt*	A vital module for window related operation
 
-Version: 0.1.0-dev
+Version: 1.0.0
 Author : Alisue <lambdalisue@hashnote.net>
 License: MIT license
 Support: Vim 8.0.0000 and above
